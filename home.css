@@ -1,0 +1,475 @@
+/* General styles */
+body {
+    font-family: 'Calibri', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252525; /* Dark background */
+    color: #ddd; /* Light text color */
+}
+
+header {
+    background-color: #252525;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .nav-social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-social-icons a:hover {
+    color: #bbb;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        z-index: 1000;
+        padding-top: 60px;
+    }
+  
+    nav ul.show {
+        display: flex;
+    }
+  
+    nav ul li {
+        display: block;
+    }
+  
+    .nav-social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+  }
+  
+  /* Dropdown styles */
+  nav .dropdown {
+    position: relative;
+  }
+  
+  nav .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  nav .dropdown .dropdown-menu li {
+    list-style: none;
+  }
+  
+  nav .dropdown .dropdown-menu a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  nav .dropdown .dropdown-menu a:hover {
+    background-color: #575757;
+  }
+  
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+main {
+    padding: 20px;
+}
+
+/* Dynamic Tagline Section */
+.dynamic-tagline {
+    text-align: center;
+    margin: 20px 0; /* Reduced space above and below the tagline */
+    color: #ddd; /* Light text color */
+    font-size: 24px; /* Adjust as needed */
+}
+
+.dynamic-tagline #tagline {
+    font-weight: bold;
+}
+
+.dynamic-tagline #dynamic-word {
+    color: #f8ed31; /* Color for the dynamic word */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Image Carousel Container */
+.image-carousel {
+    display: flex;
+    justify-content: center; /* Center carousel items horizontally */
+    align-items: center; /* Center carousel items vertically */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning for future elements (if needed) */
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  /* Image Slide */
+  .image-slide {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100%; /* Ensure the slide takes up the full width */
+    height: 100%; /* Ensure the slide takes up the full height */
+  }
+  
+  /* Image */
+  .image-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+
+
+/* Book Now Section */
+.book-now-section {
+    text-align: center;
+    margin: 30px 0; /* Space above and below the button */
+}
+
+.book-now-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    text-decoration: none; /* Removes the underline */
+}
+
+.book-now-button:hover {
+    background-color: #FFF225;
+    color: black;
+    border-color: wheat; /* Keeps the border color consistent */
+}
+
+/* USP Heading */
+.usp-heading {
+    text-align: center;
+    margin: 20px 0; /* Space above and below the heading */
+}
+
+.usp-heading h1 {
+    font-size: 32px; /* Adjust as needed */
+    color: #FFF225; /* Light text color */
+    font-weight: bold; /* Bold text */
+}
+
+.product-section {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px; /* Increases the space above the flashcards */
+    padding: 0; /* Remove any padding that might add space */
+}
+
+.product-heading {
+    font-size: 2em;
+    margin: 0 0 5px 0px; /* Reduce top and bottom margin */
+    padding: 0; /* Ensure no padding is added */
+    color: #FFF225;
+}
+
+.product-flashcards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+    margin-top: 5px; /* Adjust to reduce space from heading */
+    padding: 50px;
+    justify-content: center;
+}
+
+.flashcard {
+    background-color: #414141;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.flashcard:hover {
+    transform: translateY(-10px);
+}
+
+.flashcard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.flashcard h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #FFF225;
+}
+
+.flashcard p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #FFFF;
+}
+
+.flashcard .book-now-button {
+    color: #FFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.flashcard .book-now-button:hover {
+    background-color: #FFF225;
+    color: #252525;
+    transform: scale(1.05);
+}
+
+/* Center the third flashcard below the first two */
+.flashcard:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+}
+
+/* USP Carousel */
+.usp-carousel {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.2); /* Semi-transparent gray */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white; /* White text */
+}
+
+.usp-slide {
+    display: none;
+}
+
+.usp-slide.active {
+    display: block;
+}
+
+.usp-slide h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white; /* White heading */
+}
+
+.usp-slide p {
+    font-size: 16px;
+    color: white; /* White text */
+}
+
+/* Dots for USP carousel */
+.usp-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.usp-dots .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.usp-dots .dot.active {
+    background-color: #717171;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide menu items initially on mobile */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for the menu on mobile */
+        position: absolute;
+        top: 0;
+        left: 0; /* Align menu to the left */
+        background-color: #333;
+        z-index: 1000; /* Ensure the menu is above other content */
+        padding-top: 60px; /* Adjust padding for logo and menu items */
+    }
+
+    nav ul.show {
+        display: flex; /* Show menu items when toggle is active */
+    }
+
+    nav ul li {
+        display: block; /* Stack items vertically */
+    }
+
+    nav ul li a {
+        padding: 14px;
+        text-align: center;
+    }
+
+    .nav-social-icons {
+        display: flex; /* Show social icons when menu is active */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Add space between menu and social icons */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h3 {
+    color: #FFF225;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom p {
+    color: white;
+  }

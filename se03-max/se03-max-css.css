@@ -1,0 +1,345 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #252525;
+    color: #ddd; /* Changed to match reference */
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #252525;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .nav-social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-social-icons a:hover {
+    color: #bbb;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        z-index: 1000;
+        padding-top: 60px;
+    }
+  
+    nav ul.show {
+        display: flex;
+    }
+  
+    nav ul li {
+        display: block;
+    }
+  
+    .nav-social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+  }
+  
+  /* Dropdown styles */
+  nav .dropdown {
+    position: relative;
+  }
+  
+  nav .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  nav .dropdown .dropdown-menu li {
+    list-style: none;
+  }
+  
+  nav .dropdown .dropdown-menu a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  nav .dropdown .dropdown-menu a:hover {
+    background-color: #575757;
+  }
+  
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    width: 45%;
+}
+
+.product-details h2 {
+    font-size: 3rem;
+    color: #FFF225; /* Updated to match reference yellow */
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.price span {
+    color: #0052cc;
+    text-decoration: line-through;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.product-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.buy-now-button, .compare-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    text-decoration: none; /* Removes the underline */
+}
+
+.buy-now-button:hover, .compare-button:hover {
+    background-color: #FFF225;
+    color: black;
+}
+
+/* Flashcards */
+.flashcards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+}
+
+.flashcard {
+    flex: 1 1 calc(25% - 20px); /* Make cards flexible and space evenly */
+    background-color: #333; /* Updated to match reference */
+    color: #ddd; /* Updated to match reference */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.flashcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.flashcard h3 {
+    color: #ffffff; /* Updated to match reference yellow */
+    margin: 10px 0;
+    font-size: 1.2rem;
+    flex: 1;
+}
+
+.flashcard p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #bbb; /* Slightly lighter text color */
+    font-size: 1rem;
+}
+
+.flashcard i {
+    font-size: 30px;
+    color: #FFF225; /* Icon color matching the reference yellow */
+    flex-shrink: 0;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h3 {
+    color: #FFF225;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom p {
+    color: white;
+  }

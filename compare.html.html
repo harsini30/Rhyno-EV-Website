@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link href="./comp-css.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="./images/logo yelgre transp.png" alt="Rhyno EV Logo" class="logo">
+        </div>
+        <button class="nav-toggle">&#9776;</button>
+        <nav>
+          <ul>
+            <li><a href="sample (1).html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="dropdown">
+              <a href="product.html">Products</a>
+              <ul class="dropdown-menu">
+                <li><a href="se03-lite.html">SE03 Lite</a></li>
+                <li><a href="se03.html">SE03</a></li>
+                <li><a href="se03-max-ht.html">SE03 Max</a></li>
+                <li><a href="comp-ht.html">Compare all</a></li>
+              </ul>
+            </li>
+            <li><a href="contactusfeed.html">Contact Us</a></li>
+            <li><a href="payment.html">Pre-book Now</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="nav-social-icons">
+              <a href="https://www.instagram.com/rhyno.in/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/rhyno-wheels/?originalSubdomain=in" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="comparison-section">
+            <div><h1>Model Comparison</h1></div>
+            <div class="comparison-para">
+                <p>To find the right model for you, first choose the car you're interested in. Then select up to three models to review and easily compare their features.</p>
+            </div>
+            
+
+            <div class="comparison-cards">
+                <div class="card">
+                    <input type="checkbox" class="compare-checkbox" id="product1-checkbox" data-model="Rhyno SE03 Lite" data-price="$15,995" data-seats="2/3 Seats" data-battery="1.8Kwh" data-motor="1500W" data-speed="55 km/h">
+                    <h2>Rhyno SE03 Lite</h2>
+                    <img src="./images/Bold_Sale_Brand_Website_Homepage_Banner__1_-removebg-preview-transformed.png" alt="Rhyno SE03 Lite">
+                    <ul>
+                        <li>2/3 Seats</li>
+                        <li>Battery: 1.8Kwh</li>
+                        <li>Motor: 1500W</li>
+                        <li>Max speed: 55 km/h</li>
+                    </ul>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <input type="checkbox" class="compare-checkbox" id="product2-checkbox" data-model="Rhyno SE03" data-price="$18,995" data-seats="3/4 Seats" data-battery="2.7Kwh" data-motor="1500W" data-speed="55 km/h">
+                    <h2>Rhyno SE03</h2>
+                    <img src="./images/Bold_Sale_Brand_Website_Homepage_Banner__2_-removebg-preview-transformed.png" alt="Rhyno SE03">
+                    <ul>
+                        <li>3/4 Seats</li>
+                        <li>Battery: 2.7Kwh</li>
+                        <li>Motor: 1500W</li>
+                        <li>Max speed: 55 km/h</li>
+                    </ul>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <input type="checkbox" class="compare-checkbox" id="product3-checkbox" data-model="Rhyno SE03 Max" data-price="$21,995" data-seats="4/5 Seats" data-battery="3.6Kwh" data-motor="1500W" data-speed="60 km/h">
+                    <h2>Rhyno SE03 Max</h2>
+                    <img src="./images/Bold_Sale_Brand_Website_Homepage_Banner__3_-removebg-preview-transformed.png" alt="Rhyno SE03 Max">
+                    <ul>
+                        <li>4/5 Seats</li>
+                        <li>Battery: 3.6Kwh</li>
+                        <li>Motor: 1500W</li>
+                        <li>Max speed: 60 km/h</li>
+                    </ul>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <button id="compare-button">Compare Selected Models</button>
+        </section>
+
+        <section id="comparison-table-section" class="comparison-table-section hidden">
+            <h2>Comparison Table</h2>
+            <table id="comparison-table">
+                <!-- Table content will be populated by JavaScript -->
+            </table>
+        </section>
+    </main>
+
+    <footer>
+    
+        <div class="footer-content">
+          <div class="header-content">
+            <img src="./images/logo yelgre transp.png" alt="Rhyno EV Logo" class="logo">
+          </div>
+    
+    
+            <div class="footer-section products">
+                <h3>Products</h3>
+                <a href="se03-lite.html">SE03 Lite</a>
+                <a href="se03.html">SE03</a>
+                <a href="se03-max-ht.html">SE03 Max</a>
+                <a href="comp-ht.html">Compare all</a>
+            </div>
+    
+            <div class="footer-section ownership">
+                <h3>Policy</h3>
+                <a href="exp-center.html">Privacy Policy</a>
+                <a href="hypercharger.html">Refund Policy</a>
+                <a href="accessories.html">Website Policy</a>
+                
+            </div>
+            <div class="footer-section company">
+                <h3>Company</h3>
+                <a href="aboutus.html">About Us</a>
+                <a href="https://www.linkedin.com/company/rhyno-wheels/?originalSubdomain=in">Careers</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="contactusfeed.css">Contact Us</a>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rhyno.in/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/rhyno-wheels/?originalSubdomain=in" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Rhyno EV. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="./comp-js.js"></script>
+</body>
+</html>

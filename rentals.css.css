@@ -1,0 +1,282 @@
+ /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background */
+    color: #ddd; /* Light text color */
+}
+
+header {
+    background-color: #252525;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .nav-social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-social-icons a:hover {
+    color: #bbb;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        z-index: 1000;
+        padding-top: 60px;
+    }
+  
+    nav ul.show {
+        display: flex;
+    }
+  
+    nav ul li {
+        display: block;
+    }
+  
+    .nav-social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+  }
+  
+  /* Dropdown styles */
+  nav .dropdown {
+    position: relative;
+  }
+  
+  nav .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  nav .dropdown .dropdown-menu li {
+    list-style: none;
+  }
+  
+  nav .dropdown .dropdown-menu a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  nav .dropdown .dropdown-menu a:hover {
+    background-color: #575757;
+  }
+  
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+main {
+    padding: 20px;
+}
+
+.rentals-section {
+    background-color: #252525(128, 128, 128, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.rentals-section h1 {
+    color: #FFF225;
+    margin-bottom: 20px;
+}
+
+.rentals-section p {
+    margin-bottom: 30px;
+}
+
+.rental-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rental-option {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.rental-option img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.rental-option h2 {
+    color: #FFF225;
+    margin-bottom: 10px;
+}
+
+.rent-now-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rent-now-button:hover {
+    background-color: #FFF225;
+    color: black;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h3 {
+    color: #FFF225;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #FFF225;
+  }
+  
+  .footer-bottom p {
+    color: white;
+  }
+
